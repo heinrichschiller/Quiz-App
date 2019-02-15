@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="assets/css/style.css" rel="stylesheet">
     <title>Quiz.app with Timer</title>
 </head>
 <body>
@@ -23,27 +24,29 @@
             <div class="nos" id="no9">9</div>
             <div class="nos" id="no10">10</div>
         </div>
-        <hr>
-        <div id="quizset">
+        <hr class="separtor-top">
+        <div id="quizSet">
             <p id="question">Question 1 Text</p>
             <div id="options" class="options">
-                <button id="btn1" class="button">Option 1<span id="option1"></span></button>
-                <button id="btn2" class="button">Option 2<span id="option2"></span></button>
-                <button id="btn3" class="button">Option 3<span id="option3"></span></button>
-                <button id="btn4" class="button">Option 4<span id="option4"></span></button>
+                <button id="btn1" class="button"><span id="option1">Option 1</span></button>
+                <button id="btn2" class="button"><span id="option2">Option 2</span></button>
+                <button id="btn3" class="button"><span id="option3">Option 3</span></button>
+                <button id="btn4" class="button"><span id="option4">Option 4</span></button>
             </div>
             <button id="submit">Next Question</button>
         </div>
         <div id="resultBox">
-            <p id="result">Result lines</p>
-            <button id="retake">Retake Test</button>    
+            <p id="result">Congrats. Your passed. <br/> Your Score is 0.</p>
+            <button id="retake">Retake Test</button>
         </div>
-        <hr>
+        <hr class="separator-bottom">
         <footer>
             <p id="progress">Question 1 of 10</p>
             <div id="timer">Timer</div>
         </footer>
+        <script src="assets/js/functions.js"></script>
+        <script src="assets/js/questions.js"></script>
+        <script src="assets/js/script.js"></script>
     </div>
-    
 </body>
 </html>
